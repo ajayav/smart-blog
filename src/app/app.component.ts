@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blog';
+  title = 'Smart Infotech';
+  
+  color ="blue";
+  bgColor = 'skyblue';
+
+  colorChange(){
+    this.color = "darkgreen"
+    this.bgColor = "green"
+  }
 }
