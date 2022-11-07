@@ -7,12 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Smart Infotech';
-  
-  color ="blue";
-  bgColor = 'skyblue';
 
-  colorChange(){
-    this.color = "darkgreen"
-    this.bgColor = "green"
-  }
 }

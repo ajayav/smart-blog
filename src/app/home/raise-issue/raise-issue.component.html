@@ -1,0 +1,9 @@
+
+<form #enquiry="ngForm" (submit)="getIssue(enquiry.value)">
+    <input type="text" ngModel name="name" placeholder="Name" >
+    <input type="text" ngModel name="phone" placeholder="Contact Number" >
+    <input type="text" ngModel name="outletName" placeholder="Outlet Name" >
+    <input type="text" ngModel name="location" placeholder="Location" >
+    <input type="text" ngModel name="isssue" placeholder="Issue" >
+    <button name="submitBtn">Submit</button>
+</form>
