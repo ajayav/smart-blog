@@ -1,9 +1,16 @@
+<div style="padding: 50px;">
+    <form #enquiry="ngForm" (submit)="getIssue(enquiry.value)" >
+        <input type="text" ngModel name="name" placeholder="Name"  class="regular h2">
+        <br>
+        <input type="text" ngModel name="phone" placeholder="Contact Number" >
+        <br>
+        <input type="text" ngModel name="outletName" placeholder="Outlet Name" >
+        <br>
+        <input type="text" ngModel name="location" placeholder="Location" >
+        <br>
+        <input type="text" ngModel name="isssue" placeholder="Issue" >
+        <br>
+        <button class="buttonPrimary" name="raiseBtn">Raise an Issue</button>
+    </form>
+</div>
 
-<form #enquiry="ngForm" (submit)="getIssue(enquiry.value)">
-    <input type="text" ngModel name="name" placeholder="Name" >
-    <input type="text" ngModel name="phone" placeholder="Contact Number" >
-    <input type="text" ngModel name="outletName" placeholder="Outlet Name" >
-    <input type="text" ngModel name="location" placeholder="Location" >
-    <input type="text" ngModel name="isssue" placeholder="Issue" >
-    <button name="submitBtn">Submit</button>
-</form>

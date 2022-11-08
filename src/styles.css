@@ -2,3 +2,13 @@
 body{
     margin: 0px;
 }
+
+.buttonPrimary{
+background-color: #284273;
+border: 0px;
+color: white;
+height: 30px;
+border-radius: 5px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

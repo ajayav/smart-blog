@@ -1,0 +1,11 @@
+img{
+    height: 300px;
+    width: 250px;
+    margin-left: 25px;
+}
+
+.headline{
+    float: right;
+    margin-top: -10rem;
+    margin-right:40rem;
+}

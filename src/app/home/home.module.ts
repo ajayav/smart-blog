@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
-import { EnquiryComponent } from './enquiry/enquiry.component';
-import { RegisterComplaintComponent } from './register-complaint/register-complaint.component';
+import { FormsModule } from '@angular/forms';
 import { RaiseIssueComponent } from './raise-issue/raise-issue.component';
 
 
@@ -10,12 +9,17 @@ import { RaiseIssueComponent } from './raise-issue/raise-issue.component';
 @NgModule({
   declarations: [
     HomeComponent,
-    EnquiryComponent,
-    RegisterComplaintComponent,
-    RaiseIssueComponent
+    RaiseIssueComponent,
+
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
+  ],
+  exports: [
+    HomeComponent,
+    RaiseIssueComponent
   ]
+
 })
 export class HomeModule { }
