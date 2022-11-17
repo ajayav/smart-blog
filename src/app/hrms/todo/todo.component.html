@@ -1,0 +1,22 @@
+<div class="body">
+    <div fxLayout="column" fxLayoutAlign="space-between">
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Enter Task</mat-label>
+                <input matInput type="text" #task name="taskInput">
+                <button *ngIf="task.value" matSuffix mat-icon-button aria-label="Clear" (click)="task.value=''">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </mat-form-field>
+        </form>
+  
+    </div>
+    <button mat-raised-button color="primary" (click)="addTask(task.value)">Create Task</button>
+
+    <div>
+        <ul *ngFor="let item of list">
+            <li>Pending Task : {{item.name}} <button (click)="removeTask(item.id)">Remove</button></li>
+        </ul>
+    </div>
+   
+</div>

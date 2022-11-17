@@ -1,0 +1,17 @@
+<div class="formContainer" style="text-align: center;">
+  <form #loginForm="ngForm" (submit)="login(loginForm.value)">
+    <input type="email" required email #email="ngModel" name="email" ngModel placeholder="Enter Email">
+    <br>
+    <span *ngIf="email.invalid && email.touched" style="color: red;">Please enter a valid Email</span>
+    <br>
+    <input type="password" name="password" minlength="5" ngModel #password="ngModel" required placeholder="Enter Password">
+    <br>
+    <span *ngIf="password.invalid && password.touched">This Password is not valid</span>
+    <br>
+    <button [disabled]="loginForm.invalid">Login</button>
+  </form>
+</div>
+
+
+<h3>{{userDetails.email}}</h3>
+<h3>{{userDetails.password}}</h3>
